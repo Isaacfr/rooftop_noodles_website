@@ -17,21 +17,289 @@ body{
 }
 
 .main_page nav{
-    width: 100vw;
-    margin-left: 40%;
-    display: flex; 
+    display: flex;
     position: absolute;
+    list-style: none;
+    font-size: 2vh;
+    color: white;
+    text-shadow: black 2px 2px 1px;
+    top: 2%;
+    right: 25%;
+}
+
+ul li{
     list-style: none;
 }
 
 .main_page nav ul{
-    width: 100%;
     display: flex;
+    width: 80%;
+    padding: 0;
 }
 
 .main_page nav ul li{
-    margin: 0 5vw 0;
+    margin: 0 25% 0;
     text-wrap: nowrap;
     list-style: none;
 }
 
+.main_buttons{
+    margin-top: 12%;
+    margin-right: 20%;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.main_buttons h2{
+    color: #BF8450;
+    font-size: 14vh;
+    text-shadow: black 3px 2px 1px;
+    width: 100%;
+    margin-bottom: 3%;
+}
+
+.main_buttons ul{
+    display: flex;
+    padding: 0;
+    margin-right: 60%;
+}
+
+.main_buttons ul li{
+    list-style: none;
+    width: 100%;
+}
+
+.main_buttons ul li a{
+    text-decoration: none;
+    border-radius: 6% 5%;
+    border: 1px solid #265902;
+    color: white;
+    font-size: 4vh;
+    background:#265902;
+    padding: 10px;
+}
+
+ul.social_media{
+    margin-top: 2%;
+    width: 100%;
+    display: flex;
+    padding: 0;
+    margin-right: 0;
+}
+
+ul.social_media li{
+    list-style: none;
+    font-size: 4vh;
+    color: white;
+    text-shadow: black 2px 2px 1px;
+    width: 16%;
+}
+
+a{
+    color:inherit;
+    text-decoration: none;
+}
+.about_us{
+    display: flex;
+}
+
+.about_us img{
+    width: 55%;
+    height: 1000px;
+}
+
+.about_us > div{
+    padding: 21% 10% 0;
+}
+
+.about_us div h1{
+    font-size: 4vh;
+    color: #77868C;
+}
+
+.about_us div p{
+    font-size: 2vh;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 9%;
+    padding-top: 8%;
+    width: 90vw;
+    background-color: #77868C;
+}
+ 
+.gallery div{
+    flex: 25%;
+    max-width: 25%;
+    margin: 0 2%;
+}
+
+.gallery div img{
+    margin: 5% 0;
+    vertical-align: middle;
+    height: 28%;
+    width: 100%;
+}
+
+footer{
+    display: flex;
+    background-color: #092601;
+    color: white;
+}
+
+footer > div{
+    flex: 40%;
+    flex-wrap: wrap;
+    padding: 2%;
+    text-align: center;
+}
+
+footer div span{
+    margin-top: 10px;
+}
+
+.menu{
+    padding-bottom: 3%;
+    background-color: #77868C;
+    color: white;
+    text-shadow: black 2px 2px 2px;
+}
+
+.menu h1{
+    font-size: 10vh;
+    padding: 1% 5%;
+    margin: 0;
+}
+
+.menu h2{
+    font-size: 5vh;
+    padding-left: 5%;
+}
+
+.app, .noodles, .special, .drinks{
+    display: flex;
+    padding-left: 5%;
+}
+
+.menu section div{
+    display: flex;
+    padding-left: 5%;
+}
+
+.menu section div h3{
+    flex: 50%;
+}
+
+nav#top_menu{
+    background-color:#77868C;
+    height: 6vh;
+}
+
+nav#top_menu ul{
+    display: flex;
+    margin: 0 0 0 55%;
+    padding: 1% 0;
+}
+
+nav#top_menu ul li{
+    flex: 20%;
+    list-style: none;
+    font-size: 2vh;
+    color: white;
+    text-shadow: black 2px 2px 1px;
+}
+
+#order{
+    padding: 3% 5%;
+}
+
+#order h1{
+    font-size: 6vh;
+    margin: 0;
+}
+
+#home ul, #celebrate ul{
+    display: flex;
+    margin: 2% 5%;
+    padding: 3%;
+    justify-content: space-evenly;
+}
+
+#home ul li, #celebrate ul li{
+    flex: 25%;
+}
+
+#home ul li a, #celebrate ul li a{
+    border: 1px inset #265902;
+    font-size: 4vh;
+}
+    
+
+#home ul li a{
+    padding: 2% 3%;
+    background-color: #BF8450;
+    color:white;
+    font-weight: bold;
+}
+
+#celebrate ul li a{
+    padding: 3%;
+    background-color: #BF8450;
+    color:white;
+    font-weight: bold;
+}
+
+#text_input form{
+    padding: 2% 5%;
+}
+
+#text_input form textarea{
+    width: 100%;
+    margin-right: 20%;
+    border: 1px solid #092601;
+}
+
+#text_input form button{
+    margin-top: 2%;
+    border: 1px solid #265902;
+    padding: 1%;
+    font-size: 4vh;
+    background-color: #BF8450;
+    color:white;
+    font-weight: bold;
+}
+
+#services, #service_buttons{
+    margin: 5%;
+}
+
+#services h1, #service_buttons h1{
+    font-size: 6vh;
+}
+
+#services p{
+    font-size: 4vh;
+}
+
+#services ul li{
+    font-size: 3vh;
+    margin: 2% 0;
+}
+
+#service_buttons ul{
+    display: flex;
+}
+
+#service_buttons ul li{
+    flex: 50%;
+    font-size: 3vh;
+    border-radius: 6% 5%;
+    border: 1px solid #265902;
+    color: white;
+    background:#265902;
+    margin: 0 15%;
+    padding: 2% 4%;
+    text-align: center;
+}
