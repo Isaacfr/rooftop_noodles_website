@@ -27,6 +27,10 @@ body{
     right: 25%;
 }
 
+ul li{
+    list-style: none;
+}
+
 .main_page nav ul{
     display: flex;
     width: 80%;
@@ -209,3 +213,60 @@ nav#top_menu ul li{
     text-shadow: black 2px 2px 1px;
 }
 
+#order{
+    padding: 3% 5%;
+}
+
+#order h1{
+    font-size: 6vh;
+    margin: 0;
+}
+
+#home ul, #celebrate ul{
+    display: flex;
+    margin: 2%;
+    padding: 3%;
+}
+
+#home ul li, #celebrate ul li{
+    flex: 25%;
+}
+
+#home ul li a{
+    padding: 2% 3%;
+    background-color: #BF8450;
+    color:white;
+    font-weight: bold;
+}
+
+#celebrate ul li a{
+    padding: 3%;
+    background-color: #BF8450;
+    color:white;
+    font-weight: bold;
+}
+
+#home ul li a, #celebrate ul li a{
+    border: 1px inset #265902;
+    font-size: 2vh;
+}
+
+#text_input form{
+    padding: 2% 5%;
+}
+
+#text_input form textarea{
+    width: 100%;
+    margin-right: 20%;
+    border: 1px solid #092601;
+}
+
+#text_input form button{
+    margin-top: 2%;
+    border: 1px solid #265902;
+    padding: 1%;
+    font-size: 2vh;
+    background-color: #BF8450;
+    color:white;
+    font-weight: bold;
+}
