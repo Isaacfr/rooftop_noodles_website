@@ -1,5 +1,8 @@
 body{
     margin: 0;
+    font-family: 'Lobster', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
 }
 
 .main_page{
@@ -24,7 +27,7 @@ body{
     color: white;
     text-shadow: black 2px 2px 1px;
     top: 2%;
-    right: 25%;
+    right: 30%;
 }
 
 ul li{
@@ -300,6 +303,280 @@ nav#top_menu ul li{
     color: white;
     background:#265902;
     margin: 0 15%;
-    padding: 2% 4%;
+    padding: 4%;
     text-align: center;
+}
+
+@media only screen and (max-width: 1700px) {
+    #text_input form textarea{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .main_page nav{
+        right: 30%;
+    }
+    .gallery{
+        width: 89vw;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .main_page nav{
+        right: 35%;
+    }
+    .main_buttons h2{
+        font-size: 8vh;
+    }
+    .main_buttons ul li a, ul.social_media li{
+        font-size: 3vh;
+    }
+}
+
+@media only screen and (max-width: 1225px) {
+    .main_page nav{
+        right: 40%;
+    }
+    nav#top_menu ul{
+        margin: 0 0 0 30%;
+    }
+    section#celebrate ul{
+        width: 90%;
+    }  
+}
+
+@media only screen and (max-width: 1105px) {
+    .main_page nav{
+        right: 50%;
+     }
+    section#celebrate ul{
+        width: 85%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    section#celebrate ul li{
+        margin: 2% 0;
+    }
+    .main_buttons ul{
+        margin-right: 50%;
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+    .main_page nav{
+       right: 55%;
+    }
+    .main_buttons ul{
+        margin-right: 40%;
+    }
+    .main_buttons h2{
+        font-size: 8vh;
+    }
+    .gallery{
+        width: 100%;
+        padding: 0;
+    }
+    .gallery div{
+        flex: 80%;
+        max-width: 80%;
+        padding: 5% 10%;
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .main_page nav{
+       right: 60%;
+    }
+    nav#top_menu ul{
+        margin: 0 5% 0 5%;
+    }
+    .main_buttons h2{
+        font-size: 6vh;
+    }
+    .main_buttons ul li a, ul.social_media li{
+        font-size: 2vh;
+    }
+    .about_us img{
+        width: 99vw;
+        height: 600px;
+    }
+    .about_us div{
+        width: 90%;
+        margin: 0 2%;
+        padding: 0 2%;
+    }
+    .about_us div h1{
+        margin: 10% 0;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .main_page nav{
+        right: 50%;
+        transform: translate(-50%, -50%);
+        margin: 10%;
+        width: 20%;
+     }
+    .main_buttons h2{
+        font-size: 6vh;
+    }
+    .main_buttons ul{
+        margin-right: 30%;
+    }
+    .about_us{
+        flex-wrap: wrap;
+    }
+    .about_us img{
+        width: 99vw;
+        height: 600px;
+    }
+    .about_us div{
+        width: 90%;
+        margin: 0 2%;
+        padding: 2%;
+    }
+    section#celebrate ul{
+        width: 75%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main_page nav{
+       right: 55%;
+       transform: translate(-50%, -50%);
+       margin: 10%;
+       width: 20%;
+    }
+    .main_buttons h2{
+        font-size: 5vh;
+    }
+    .main_buttons ul{
+        margin-right: 0;
+        justify-items:center;
+    }
+    .main_buttons ul li a, ul.social_media li{
+        font-size: 2.5vh;
+    }
+    section#home ul{
+        width: 75%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    section#home ul li{
+        margin: 10% 0;
+    }
+    section#celebrate ul{
+        width: 90%;
+    }
+    #service_buttons ul li{
+        padding-left: 0;
+    }
+    #service_buttons ul li{
+        margin: 0 10%;
+        padding: 2%;
+    }
+
+}
+
+@media only screen and (max-width: 476px) {
+    .main_page nav{
+       margin: 5% 3%;
+       padding: 0%;
+       text-align: center;
+       right: 75%;
+       width: 10%;
+       transform: translate(0%, 0%);
+    }
+    .main_page nav ul{
+        padding: 0;
+        margin: 0;
+    }
+    .main_page nav ul li{
+        margin: 0 10%;
+        list-style: none;
+    }
+
+    .main_buttons h2{
+        font-size: 4vh;
+        text-align: center;
+    }
+    .main_buttons ul{
+        margin-right: 0;
+        display: flex;
+    }
+    .main_buttons ul li{
+        flex: 100%;
+        text-align: center;
+    }
+    .main_buttons ul li a, ul.social_media li{
+        font-size: 2vh;
+    }
+    .about_us img{
+        width: 99vw;
+        height: 450px;
+    }
+    footer > div{
+        flex: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    section#home ul{
+        width: 75%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    section#home ul li{
+        margin: 10% 0;
+    }
+
+    section#celebrate ul{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .main_page nav{
+       margin: 7% 23%;
+       padding: 0%;
+       text-align: center;
+       right: 60%;
+       width: 10%;
+       transform: translate(0%, 0%);
+    }
+    .main_page nav ul{
+        padding: 0;
+        margin: 0;
+    }
+    .main_page nav ul li{
+        margin: 0 20%;
+        list-style: none;
+    }
+    
+    .about_us img{
+        width: 99vw;
+        height: 300px;
+    }
+    section#celebrate ul li a, section#home ul li a, button a{
+        font-size: 3vh;
+    }
+
+    section#celebrate ul{
+        width: 90%;
+    }
 }
